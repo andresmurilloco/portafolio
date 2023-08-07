@@ -26,13 +26,13 @@ export default function Home() {
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates numquam possimus est libero ullam culpa labore similique suscipit odit iste quo adipisci, eum aperiam in dolores dolor fugiat quisquam debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum beatae corrupti iste, excepturi doloribus facilis. Eius sapiente, tempora vero expedita neque voluptate atque! Consectetur magnam quam at excepturi delectus earum.</p>
         </div>
       </div>
+      <div id='skills'>
+      </div>
       <div id='projects'>
+      <h1>Projects</h1>
         <main className='projects-container'>
-          <h1>Projects</h1>
           <Projects/>
         </main>
-      </div>
-      <div id='skills'>
       </div>
       <div id='education'>
       </div>

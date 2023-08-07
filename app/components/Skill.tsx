@@ -1,8 +1,15 @@
 import React from 'react'
 
-const Skill = () => {
+export interface Props{
+  skill: []
+}
+
+const Skill = ({skill}:Props) => {
+
   return (
-    <div>Skill</div>
+    <div>
+      {skill}
+    </div>
   )
 }
 

@@ -14,11 +14,11 @@ const Projects = () => {
   }, []) 
 
   return (
-    <>
+    <div className='project-container'>
     {projects.map(project =>(
       <Project key={project['id']} project={project['attributes']}/>
     ))}
-    </>
+    </div>
   )
 }
 

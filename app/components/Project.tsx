@@ -1,29 +1,29 @@
+
 import React from 'react'
+import Images from './Images';
+import Link from 'next/link';
+import { Skill } from '.';
 
 export interface Props {
     project: {}
 }
 
-export interface Data {
-    git: string;
-    description: string;
-    image: object;
-    endDate: Date;
-    initialDate: Date;
-    skills: string[];
-    url: string;
-    name: string;
-}
-
 const Project = ({ project }: Props) => {
-    const { git, description, image, endDate, initialDate, skills, url, name }: Data = project;
+    const { git, description, image: images, endDate, initialDate, skills, url, name }:any = project;
 
     return (
         <div>
-            <h1>{name}</h1>
+            <h2>{name}</h2>
+            {images.data.map((image:any) => (
+                <Images key={image.id} image={image}/>
+            ))}
+            <p>Started on: {initialDate} / {endDate === '' ? `Ended on: ${endDate}`:'To be ended'}</p>
+            {skills.skills.map((skill:any) =>(
+                <Skill key={skill} skill={skill}/>
+            ))}
             <p>{description}</p>
-            <p>{url}</p>
-            <p>{git}</p>
+            <Link href={url}>Link to {name}</Link>
+            <Link href={git}>Git of {name}</Link>
         </div>
     )
 }
