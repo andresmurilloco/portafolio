@@ -19,14 +19,14 @@ export default function Home() {
   return (
     <main>
       <div id='about' className='about-container'>
-        <div className='profile-picture-background'></div>
-        <Image src={imageMe} alt='Profile picture Andrés' className='profile-image' />
+        <div className='profile'>
+          <div className='profile-picture-background'></div>
+          <Image src={imageMe} alt='Profile picture Andrés' className='profile-image' />
+        </div>
         <div className='about-text'>
           <h1>About me</h1>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates numquam possimus est libero ullam culpa labore similique suscipit odit iste quo adipisci, eum aperiam in dolores dolor fugiat quisquam debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum beatae corrupti iste, excepturi doloribus facilis. Eius sapiente, tempora vero expedita neque voluptate atque! Consectetur magnam quam at excepturi delectus earum.</p>
         </div>
-      </div>
-      <div id='skills'>
       </div>
       <div id='projects'>
       <h1>Projects</h1>
@@ -35,6 +35,8 @@ export default function Home() {
         </main>
       </div>
       <div id='education'>
+        <h1>Education</h1>
+        <h3>Udemy</h3>
       </div>
       <div id='contact'>
       </div>
