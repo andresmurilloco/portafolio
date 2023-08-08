@@ -26,7 +26,12 @@ export default function Home() {
         </div>
         <div className='about-text'>
           <h1>About me</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates numquam possimus est libero ullam culpa labore similique suscipit odit iste quo adipisci, eum aperiam in dolores dolor fugiat quisquam debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum beatae corrupti iste, excepturi doloribus facilis. Eius sapiente, tempora vero expedita neque voluptate atque! Consectetur magnam quam at excepturi delectus earum.</p>
+          <p>I am a disciplined, responsible, organized, motivated, punctual person. I have been risen in a home with strong principles and values, honesty as the most important.
+            I am a Front-End web developer focused on HTML5, JavaScript, React.js.<br/>
+            I feel comfortable workign with some of the most famous frameworks like Next, Apolo and Remix.<br/>
+            I also have some experience working with APIs and not only consuming them, but setting them up too using Strapi and my knowledge in SQL.
+            <br/> I am eager to learn and get more experience as a developer and I am ready to fulfill all my functions, obligations and stablished guidelines. I am ready to be part in the accomplishment of your goals. I am always in motion to improve my skills and expand my knowledge.
+          </p>
         </div>
       </div>
       <div id='projects'>
