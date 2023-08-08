@@ -14,13 +14,15 @@ import remix from '../../public/assets/img/remix.png'
 import next from '../../public/assets/img/next.png'
 import post from '../../public/assets/img/postgresql.png'
 import other from '../../public/assets/img/other.png'
+import web from '../../public/assets/img/web.png'
+import gitLogo from '../../public/assets/img/git.png'
 
 export interface Props {
     project: {}
 }
 
 const Project = ({ project }: Props) => {
-    const { git, description, image, endDate, initialDate, skills, url, name }: any = project;
+    const { git, description, image, endDate, initialDate, skills, url, name }: any = project;    
 
     const imageProperties = image.data[0].attributes.formats.thumbnail;
 
@@ -28,18 +30,25 @@ const Project = ({ project }: Props) => {
         <div className='container-solo-project'>
             <h2>{name}</h2>
             <Image src={imageProperties.url} width={imageProperties.width} height={imageProperties.height} alt={`Image from ${name}`} />
-            <p>Started on: {initialDate} / {endDate === '' ? `Ended on: ${endDate}` : 'To be ended'}</p>
+            <p>Started on: {initialDate} / {endDate ? `Ended on: ${endDate}` : 'To be ended'}</p>
             <div className='container-skills'>
                 {skills.skills.map((skill: any) => (
                     <div key={skill}>
-                        <Image src={skill === 'javascript' ? java : skill === 'typescript' ? ts : skill === 'next' ? next : skill === 'react' ? react : skill === 'css' ? css : skill === 'astro' ? astro : skill === 'tailwind' ? tail : skill === 'vite' ? vite : skill === 'remix' ? remix : skill === 'postgresql' ? post : skill === 'strapi' ? strapi : other} alt={'Logo skills'} width={30} height={30}/>
-                        </div>
+                        <Image src={skill === 'javascript' ? java : skill === 'typescript' ? ts : skill === 'next' ? next : skill === 'react' ? react : skill === 'css' ? css : skill === 'astro' ? astro : skill === 'tailwind' ? tail : skill === 'vite' ? vite : skill === 'remix' ? remix : skill === 'postgresql' ? post : skill === 'strapi' ? strapi : other} alt={'Logo skills'} width={30} height={30} />
+                    </div>
                 ))}
             </div>
             <p>{description}</p>
-            <Link href={url}>Link to {name}</Link>
-            <Link href={git}>Git of {name}</Link>
+            <div>
+                <Link href={url}>
+                    <Image src={web} width={35} height={35} alt='web logo'/>
+                </Link>
+                <Link href={git}>
+                <Image src={gitLogo} width={35} height={35} alt='git logo'/>
+                    </Link>
+            </div>
         </div>
+
     )
 }
 

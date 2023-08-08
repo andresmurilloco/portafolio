@@ -133,6 +133,60 @@ body {
   font-weight: bolder;
 }
 
+/* Education */
+
+.container-education{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Contact */
+
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Loading */
+.loading-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-ball{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  animation: loading-ball-animation 2s infinite alternate-reverse;
+  background-color: #1D267D;
+  box-shadow: 0px 0px 20px red;
+}
+
+@keyframes loading-ball-animation {
+  0%{background-color: #1D267D;}
+  100%{background-color: white;}
+}
+
+.loading-text{
+  text-shadow: 0px 0px 20px rgb(38, 0, 255);
+  animation: loading-text-animation 2s infinite alternate-reverse;
+}
+
+@keyframes loading-text-animation {
+  0%{text-shadow: 0px 0px 20px rgb(38, 0, 255);}
+  25%{text-shadow: 0px 0px 20px rgb(0, 217, 255);}
+  50%{text-shadow: 0px 0px 20px rgb(9, 255, 0);}
+  100%{text-shadow: 0px 0px 20px rgb(255, 0, 0);}
+}
+
+/* Responsive */
+
 @media (max-width:1018px) {
   .navegation-full{
     display: none;
