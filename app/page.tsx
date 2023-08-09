@@ -48,7 +48,7 @@ export default function Home() {
         <div>
           <h1>Education</h1>
         </div>
-        <div>
+        <div className='education-bar'>
           <div>
             <h2>Icesi university (2014-2017)</h2>
             <h4>Systems engineering, 4th semester</h4>
