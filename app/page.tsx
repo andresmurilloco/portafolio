@@ -54,37 +54,37 @@ export default function Home() {
             <h4>Systems engineering, 4th semester</h4>
           </div>
           <div>
-            <h2>Udemy (2023)</h2>
+            <h2>Udemy</h2>
             <h4>React - La Guía Completa: Hooks Context Redux MERN +15 Apps</h4>
             <h4>Next.js: El framework de React para producción</h4>
           </div>
           <div>
-            <h2>DevTalls (2023)</h2>
+            <h2>DevTalls</h2>
             <h4>Curso de manejo de estado en React</h4>
             <h4>React Query - Un poderoso gestor de estado asíncrono.</h4>
           </div>
           <div>
-            <h2>Platzi (2023)</h2>
+            <h2>Platzi</h2>
             <h4>Curso de programación basica</h4>
           </div>
         </div>
       </div>
       <div id='contact' className='contact-container'>
         <div>
-          <Link href={'https://www.linkedin.com/in/devandres25/'}>
-            <Image width={10} height={10} src={lilogo} alt={'linkedin button'}/>
+          <Link className='social-link li-btn' href={'https://www.linkedin.com/in/devandres25/'}>
+            <Image width={30} height={30} src={lilogo} alt={'linkedin button'}/>
             <h2>LinkedIn</h2>
           </Link>
-          <Link href={'https://wa.me/573176755861'}>
-          <Image width={10} height={10} src={wa} alt={'whatsapp button'}/>
+          <Link className='social-link wa-btn' href={'https://wa.me/573176755861'}>
+          <Image width={30} height={30} src={wa} alt={'whatsapp button'}/>
             <h2>Whatsapp</h2>
           </Link>
-          <Link href={'mailto:dev.andresmurillo@gmail.com'}>
-          <Image width={10} height={10} src={gmail} alt={'gmail button'}/>
+          <Link className='social-link gmail-btn' href={'mailto:dev.andresmurillo@gmail.com'}>
+          <Image width={30} height={25} src={gmail} alt={'gmail button'}/>
             <h2>E-mail</h2>
           </Link>
         </div>
-        <h1>Hire me!</h1>
+        <h1>Contact me!</h1>
       </div>
     </main>
   )
