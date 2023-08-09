@@ -3,8 +3,7 @@ import React from 'react'
 const Loading = () => {
   return (
     <div className='loading-container'>
-        <div className='loading-ball'></div>
-        <h2 className='loading-text'>Loading...</h2>
+        <h2 className='loading-text'>Fetching projects...</h2>
     </div>
   )
 }

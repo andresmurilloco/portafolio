@@ -94,6 +94,14 @@ body {
 
 /* Projects */
 
+.projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .project-container{
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -105,6 +113,23 @@ body {
   flex-flow: column;
   align-items: center;
   padding: 0 1rem 0 1rem;
+  font-weight: bolder;
+}
+
+.project-links{
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.project-links a{
+  all: unset;
+  cursor: pointer;
+}
+
+.projects p{
+  margin: 0;
 }
 
 /* Skills */
@@ -157,20 +182,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.loading-ball{
-  width: 10rem;
-  height: 10rem;
-  border-radius: 100%;
-  animation: loading-ball-animation 2s infinite alternate-reverse;
-  background-color: #1D267D;
-  box-shadow: 0px 0px 20px red;
-}
-
-@keyframes loading-ball-animation {
-  0%{background-color: #1D267D;}
-  100%{background-color: white;}
 }
 
 .loading-text{

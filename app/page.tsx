@@ -1,13 +1,17 @@
 //Libraries and utilities
 import { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 
 //Components
 import Projects from './components/Projects'
 
 //Images
 import imageMe from '../public/assets/img/me.png'
-import Link from 'next/link'
+import lilogo from '../public/assets/img/li.webp'
+import gmail from '../public/assets/img/gmail.png'
+import wa from '../public/assets/img/wa.png'
+
 
 //Functions
 export const metadata: Metadata = {
@@ -34,7 +38,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div id='projects'>
+      <div id='projects' className='projects'>
         <h1>Projects</h1>
         <main className='projects-container'>
           <Projects />
@@ -68,12 +72,15 @@ export default function Home() {
       <div id='contact' className='contact-container'>
         <div>
           <Link href={'https://www.linkedin.com/in/devandres25/'}>
+            <Image width={10} height={10} src={lilogo} alt={'linkedin button'}/>
             <h2>LinkedIn</h2>
           </Link>
           <Link href={'https://wa.me/573176755861'}>
+          <Image width={10} height={10} src={wa} alt={'whatsapp button'}/>
             <h2>Whatsapp</h2>
           </Link>
           <Link href={'mailto:dev.andresmurillo@gmail.com'}>
+          <Image width={10} height={10} src={gmail} alt={'gmail button'}/>
             <h2>E-mail</h2>
           </Link>
         </div>

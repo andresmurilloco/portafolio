@@ -39,12 +39,14 @@ const Project = ({ project }: Props) => {
                 ))}
             </div>
             <p>{description}</p>
-            <div>
+            <div className='project-links'>
                 <Link href={url}>
                     <Image src={web} width={35} height={35} alt='web logo'/>
+                    <p>Website</p>
                 </Link>
                 <Link href={git}>
                 <Image src={gitLogo} width={35} height={35} alt='git logo'/>
+                <p>GitHub</p>
                     </Link>
             </div>
         </div>
