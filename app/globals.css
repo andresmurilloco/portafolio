@@ -303,4 +303,12 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  .container-education{
+    margin: 2rem 0 5rem 0;
+  }
+
+  .social-btns-container{
+    border-right: solid .2rem #1D267D;
+  }
 }

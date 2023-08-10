@@ -70,7 +70,7 @@ export default function Home() {
         </div>
       </div>
       <div id='contact' className='contact-container'>
-        <div>
+        <div className='social-btns-container'>
           <Link className='social-link li-btn' href={'https://www.linkedin.com/in/devandres25/'}>
             <Image width={30} height={30} src={lilogo} alt={'linkedin button'}/>
             <h2>LinkedIn</h2>
