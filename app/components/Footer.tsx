@@ -1,6 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
 
+var pjson = require('../../package.json')
+
+
 const Footer = () => (
   <main>
     <div className='footer-container'>
@@ -21,6 +24,7 @@ const Footer = () => (
         </nav>
       </div>
       <div className='footer-text'>
+        <p>Portafolio V {pjson.version}</p>
         <p>All rights reserved {new Date().getFullYear()}©</p>
       </div>
     </div>
