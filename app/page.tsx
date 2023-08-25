@@ -11,6 +11,7 @@ import imageMe from '../public/assets/img/me.png'
 import lilogo from '../public/assets/img/li.webp'
 import gmail from '../public/assets/img/gmail.png'
 import wa from '../public/assets/img/wa.png'
+import rocket from '../public/assets/img/rocket.png'
 
 
 //Functions
@@ -30,11 +31,7 @@ export default function Home() {
         </div>
         <div className='about-text'>
           <h1>About me</h1>
-          <p>I am a disciplined, responsible, organized, motivated, punctual person. I have been risen in a home with strong principles and values, honesty as the most important.
-            I am a Front-End web developer focused on HTML5, JavaScript, React.js.<br/>
-            I feel comfortable workign with some of the most famous frameworks like Next, Apolo and Remix.<br/>
-            I also have some experience working with APIs and not only consuming them, but setting them up too using Strapi and my knowledge in SQL.
-            <br/> I am eager to learn and get more experience as a developer and I am ready to fulfill all my functions, obligations and stablished guidelines. I am ready to be part in the accomplishment of your goals. I am always in motion to improve my skills and expand my knowledge.
+          <p>As a full-stack junior developer, I am eager to demonstrate my potential and passion for web development. I am currently pursuing a front-end developer course at Udemy, where I am learning React.js, TypeScript, Astro, JavaScript, Next.JS, Strapi, and Remix. I have also completed a basic programming course at Platzi, where I gained a solid foundation in HTML, CSS, and Git. <br/>My previous work experience as a call center customer service representative and an English teacher has helped me improve my communication, multitasking, and problem-solving skills, as well as my proficiency in English and Spanish. I am a disciplined, responsible, organized, and motivated person, who values honesty and teamwork. I am willing and able to relocate abroad if necessary, and I am always looking for opportunities to enhance my skills and knowledge. I am ready to contribute to your goals and projects with enthusiasm and dedication.
           </p>
         </div>
       </div>
@@ -84,7 +81,7 @@ export default function Home() {
             <h2>E-mail</h2>
           </Link>
         </div>
-        <h1>Contact me!</h1>
+        <h1>Contact me! <Image src={rocket} width={25} height={25} alt='rocket'></Image></h1>
       </div>
     </main>
   )

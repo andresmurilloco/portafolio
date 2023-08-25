@@ -13,7 +13,7 @@ const Header = () => {
     <main>
       <div className='header-container'>
         <div className='logo-container'>
-          <Image src={logo} alt='Page logo' width={100} />
+          <Image src={logo} alt='Page logo' width={100} className='logo'/>
           <div className='logo-title'>
             <h1>Andrés Murillo Cortázar</h1>
             <h3>Full-Stack developer</h3>

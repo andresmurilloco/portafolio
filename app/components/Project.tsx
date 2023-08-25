@@ -28,8 +28,10 @@ const Project = ({ project }: Props) => {
 
     return (
         <div className='container-solo-project'>
-            <h2>{name}</h2>
-            <Image src={imageProperties.url} width={imageProperties.width} height={imageProperties.height} alt={`Image from ${name}`} />
+            <Link href={url} className='project-title'>
+                <h2>{name}</h2>
+                <Image src={imageProperties.url} width={imageProperties.width} height={imageProperties.height} alt={`Image from ${name}`} />
+            </Link>
             <p>Started on: {initialDate} / {endDate ? `Ended on: ${endDate}` : 'To be ended'}</p>
             <div className='container-skills'>
                 {skills.skills.map((skill: any) => (
