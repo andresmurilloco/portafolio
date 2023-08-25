@@ -12,12 +12,19 @@ import lilogo from '../public/assets/img/li.webp'
 import gmail from '../public/assets/img/gmail.png'
 import wa from '../public/assets/img/wa.png'
 import rocket from '../public/assets/img/rocket.png'
+import edu from '../public/assets/img/edu.png'
+import about from '../public/assets/img/about.png'
+import project from '../public/assets/img/project.png'
+import icesi from '../public/assets/img/icesi.png'
+import devtalles from '../public/assets/img/devtalles.jpg'
+import udemy from '../public/assets/img/udemy.png'
+import platzi from '../public/assets/img/platzi.webp'
 
 
 //Functions
 export const metadata: Metadata = {
   title: 'Portafolio - Home',
-  description: 'Portafolio front-end dev Andrés Murillo',
+  description: 'Portafolio Andrés Murillo',
 }
 
 export default function Home() {
@@ -30,39 +37,39 @@ export default function Home() {
           <Image src={imageMe} alt='Profile picture Andrés' className='profile-image' />
         </div>
         <div className='about-text'>
-          <h1>About me</h1>
+          <h1>About me <Image src={about} width={30} height={30} alt='Education logo'></Image></h1>
           <p>As a full-stack junior developer, I am eager to demonstrate my potential and passion for web development. I am currently pursuing a front-end developer course at Udemy, where I am learning React.js, TypeScript, Astro, JavaScript, Next.JS, Strapi, and Remix. I have also completed a basic programming course at Platzi, where I gained a solid foundation in HTML, CSS, and Git. <br/>My previous work experience as a call center customer service representative and an English teacher has helped me improve my communication, multitasking, and problem-solving skills, as well as my proficiency in English and Spanish. I am a disciplined, responsible, organized, and motivated person, who values honesty and teamwork. I am willing and able to relocate abroad if necessary, and I am always looking for opportunities to enhance my skills and knowledge. I am ready to contribute to your goals and projects with enthusiasm and dedication.
           </p>
         </div>
       </div>
       <div id='projects' className='projects'>
-        <h1>Projects</h1>
+        <h1>Projects <Image src={project} width={30} height={30} alt='Education logo'></Image></h1>
         <main className='projects-container'>
           <Projects />
         </main>
       </div>
       <div id='education' className='container-education'>
         <div>
-          <h1>Education</h1>
+          <h1>Education <Image src={edu} width={30} height={30} alt='Education logo'></Image></h1>
         </div>
         <div className='education-bar'>
           <div>
-            <h2>Icesi university (2014-2017)</h2>
+            <h2><Image src={icesi} width={20} height={20} alt='Education logo'></Image> Icesi university (2014-2017) </h2>
             <h4>Systems engineering, 4th semester</h4>
           </div>
           <div>
-            <h2>Udemy</h2>
-            <h4>React - La Guía Completa: Hooks Context Redux MERN +15 Apps</h4>
-            <h4>Next.js: El framework de React para producción</h4>
+            <h2><Image src={udemy} width={35} height={20} alt='Education logo'></Image>Udemy </h2>
+            <h4>- React - La Guía Completa: Hooks Context Redux MERN +15 Apps</h4>
+            <h4>- Next.js: El framework de React para producción</h4>
           </div>
           <div>
-            <h2>DevTalls</h2>
-            <h4>Curso de manejo de estado en React</h4>
-            <h4>React Query - Un poderoso gestor de estado asíncrono.</h4>
+            <h2><Image src={devtalles} width={20} height={20} alt='Education logo'></Image> DevTalles</h2>
+            <h4>- Curso de manejo de estado en React</h4>
+            <h4>- React Query - Un poderoso gestor de estado asíncrono.</h4>
           </div>
           <div>
-            <h2>Platzi</h2>
-            <h4>Curso de programación basica</h4>
+            <h2><Image src={platzi} width={20} height={20} alt='Education logo'></Image> Platzi</h2>
+            <h4>- Curso de programación basica</h4>
           </div>
         </div>
       </div>
