@@ -1,6 +1,8 @@
 import React from 'react'
 
+
 const Loading = () => {
+  
   return (
     <div className='loading-container'>
       <div className="sk-cube-grid">
@@ -15,7 +17,7 @@ const Loading = () => {
         <div className="sk-cube sk-cube9"></div>
       </div>
       <h2 className='loading-text'>Fetching projects...</h2>
-      <p>I apologize. It takes around 5 minutes to fetch up the first time.</p>
+      <p>It takes around 5 minutes to fetch up the first time.</p>
     </div>
   )
 }

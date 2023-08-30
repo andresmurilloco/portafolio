@@ -16,7 +16,7 @@ const Header = () => {
           <Image src={logo} alt='Page logo' width={100} className='logo'/>
           <div className='logo-title'>
             <h1>Andrés Murillo Cortázar</h1>
-            <h3>Full-Stack developer</h3>
+            <h3>Front-end developer</h3>
           </div>
         </div>
         <div className='navegation-full'>

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: 'Portafolio Andrés Murillo',
 }
 
-export default function Home() {
+export default function Home() {  
 
   return (
     <main>
@@ -38,7 +38,7 @@ export default function Home() {
         </div>
         <div className='about-text'>
           <h1>About me <Image src={about} width={30} height={30} alt='Education logo'></Image></h1>
-          <p>As a full-stack junior developer, I am eager to demonstrate my potential and passion for web development. I am currently pursuing a front-end developer course at Udemy, where I am learning React.js, TypeScript, Astro, JavaScript, Next.JS, Strapi, and Remix. I have also completed a basic programming course at Platzi, where I gained a solid foundation in HTML, CSS, and Git. <br/>My previous work experience as a call center customer service representative and an English teacher has helped me improve my communication, multitasking, and problem-solving skills, as well as my proficiency in English and Spanish. I am a disciplined, responsible, organized, and motivated person, who values honesty and teamwork. I am willing and able to relocate abroad if necessary, and I am always looking for opportunities to enhance my skills and knowledge. I am ready to contribute to your goals and projects with enthusiasm and dedication.
+          <p>As a front-end junior developer, I am eager to demonstrate my potential and passion for web development. I am currently pursuing a front-end developer course at Udemy, where I am learning React.js, TypeScript, Astro, JavaScript, Next.JS, Strapi, and Remix. I have also completed a basic programming course at Platzi, where I gained a solid foundation in HTML, CSS, and Git. <br/>My previous work experience as a call center customer service representative and an English teacher has helped me improve my communication, multitasking, and problem-solving skills, as well as my proficiency in English and Spanish. I am a disciplined, responsible, organized, and motivated person, who values honesty and teamwork. I am willing and able to relocate abroad if necessary, and I am always looking for opportunities to enhance my skills and knowledge. I am ready to contribute to your goals and projects with enthusiasm and dedication.
           </p>
         </div>
       </div>
