@@ -1,3 +1,6 @@
+.modal-button{
+  display: none;
+}
 
 .navegation-full a {
     all: unset;
@@ -27,5 +30,9 @@
   @media (max-width:1018px) {
     .navegation-full{
         display: none;
+      }
+
+      .modal-button{
+        display: block;
       }
   }

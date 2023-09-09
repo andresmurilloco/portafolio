@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react'
 import { getProjects } from '../api/apiconn'
 import Project from './Project'
-import Loading from './Loading'
 import { data } from '../api/apiconn'
 
 const Projects = () => {
