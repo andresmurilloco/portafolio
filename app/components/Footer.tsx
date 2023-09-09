@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import './css/footer.css'
 
 var pjson = require('../../package.json')
 
@@ -8,14 +9,6 @@ const Footer = () => (
   <main>
     <div className='footer-container'>
       <div className='navegation-full'>
-        <nav>
-          <Link href={'#about'} >About me</Link>
-          <Link href={'#projects'}>My projects</Link>
-          <Link href={'#education'}>Education</Link>
-          <Link href={'#contact'}>Contact me</Link>
-        </nav>
-      </div>
-      <div className='navegation-compact'>
         <nav>
           <Link href={'#about'} >About me</Link>
           <Link href={'#projects'}>My projects</Link>
