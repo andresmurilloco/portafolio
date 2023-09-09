@@ -23,3 +23,8 @@
   .logo-title h3 {
     margin-top: 0;
   }
+
+  .link-title{
+    all: unset;
+    cursor: pointer;
+  }

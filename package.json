@@ -2,7 +2,7 @@
   "name": "portafolio",
   "version": "2.1.2",
   "private": true,
-  "description":"Personal portfolio",
+  "description": "Personal portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
