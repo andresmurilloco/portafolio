@@ -1,4 +1,3 @@
-'use client'
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -30,9 +29,6 @@ export const metadata: Metadata = {
 }
 
 const HomeEn = () => {
-  useEffect(() => {
-    localStorage.setItem('language', 'en');
-  }, [])
   return (
     <LayoutEn>
       <div id='about' className='about-container'>

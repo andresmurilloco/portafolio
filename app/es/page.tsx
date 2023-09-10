@@ -1,4 +1,3 @@
-'use client'
 //Libraries and utilities
 import { Metadata } from 'next'
 import Image from 'next/image'
@@ -31,9 +30,6 @@ export const metadata: Metadata = {
 }
 
 const HomeEs = () => {
-  useEffect(() => {
-    localStorage.setItem('language', 'es');
-  }, [])
 
   return (
     <LayoutEs>
