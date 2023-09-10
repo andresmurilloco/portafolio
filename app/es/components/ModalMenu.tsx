@@ -12,14 +12,14 @@ const ModalMenu = ({ modalHandler }: any) => {
         <h1>Menu</h1>
       </div>
       <nav>
-        <Link href={'#about'} >About me</Link>
-        <Link href={'#projects'}>My projects</Link>
-        <Link href={'#education'}>Education</Link>
-        <Link href={'#contact'}>Contact me</Link>
-        <div className='modal-language'>
+        <Link href={'#about'} >Sobre mí</Link>
+        <Link href={'#projects'}>Mis Proyectos</Link>
+        <Link href={'#education'}>Educación</Link>
+        <Link href={'#contact'}>Contactame</Link>
+        {/* <div className='modal-language'>
           <Image src={spanish} width={50} height={50} alt='español' />
           <Image src={english} width={45} height={45} alt='english' />
-        </div>
+        </div> */}
       </nav>
     </div>
   )

@@ -24,8 +24,8 @@ import { useEffect } from 'react'
 
 //Functions
 export const metadata: Metadata = {
-  title: 'Portafolio - Home',
-  description: 'Portafolio Andrés Murillo',
+  title: 'Portfolio - Home',
+  description: 'Portfolio Andrés Murillo',
 }
 
 const HomeEn = () => {

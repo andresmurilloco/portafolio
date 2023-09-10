@@ -3,50 +3,36 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import ModalMenu from './ModalMenu'
 import './css/menu.css'
-import menuIcon from '../../../public/assets/img/menuIcon.png'
 import Image from 'next/image'
+import menuIcon from '../../../public/assets/img/menuIcon.png'
+import english from '../../../public/assets/img/english.png'
 
-const Menu = ({ lang }: any) => {
+const Menu = () => {
   const [modal, setmodal] = useState(false);
   const modalHandler = () => {
     setmodal(!modal);
   }
-
-  if (lang === 'es') {
-    return (
-      <>
-        <div className='navegation-full'>
-          <nav>
-            <Link href={'#about'} >Sobre mi</Link>
-            <Link href={'#projects'}>Mis proyectos</Link>
-            <Link href={'#education'}>Educacion</Link>
-            <Link href={'#contact'}>Contactame</Link>
-          </nav>
+  return (
+    <>
+      <Link href={'../../es'}>
+        <div className='language-button en'>
+          <Image src={english} width={40} height={40} alt='spanish' />
         </div>
-        <div className='modal-button'>
-          <Image src={menuIcon} width={65} height={65} alt='menu' onClick={() => modalHandler()} />
-        </div>
-        {modal ? <ModalMenu modalHandler={modalHandler} lang={lang} /> : ''}
-      </>
-    )
-  } else if (lang === 'en') {
-    return (
-      <>
-        <div className='navegation-full'>
-          <nav>
-            <Link href={'#about'} >About me</Link>
-            <Link href={'#projects'}>My projects</Link>
-            <Link href={'#education'}>Education</Link>
-            <Link href={'#contact'}>Contact me</Link>
-          </nav>
-        </div>
-        <div className='modal-button'>
-          <Image src={menuIcon} width={65} height={65} alt='menu' onClick={() => modalHandler()} />
-        </div>
-        {modal ? <ModalMenu modalHandler={modalHandler} lang={lang} /> : ''}
-      </>
-    )
-  }
+      </Link>
+      <div className='navegation-full'>
+        <nav>
+          <Link href={'#about'} >About me</Link>
+          <Link href={'#projects'}>My Projects</Link>
+          <Link href={'#education'}>Education</Link>
+          <Link href={'#contact'}>Contact me</Link>
+        </nav>
+      </div>
+      <div className='modal-button'>
+        <Image src={menuIcon} width={65} height={65} alt='menu' onClick={() => modalHandler()} />
+      </div>
+      {modal ? <ModalMenu modalHandler={modalHandler} /> : ''}
+    </>
+  )
 }
 
 export default Menu

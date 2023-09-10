@@ -22,6 +22,10 @@ export default function Home() {
   }, [])
   return (
     <LayoutMain>
+      <div className='language-menu-title'>
+        <h1>Bienvenido! / Welcome!</h1>
+        <h3>Por favor elija su idioma / Please choose your language</h3>
+      </div>
       <div className='language-main'>
         <Link href={'/es'} className='language-main-option es'>
           <Image src={spanish} width={150} height={150} alt='spanish' />

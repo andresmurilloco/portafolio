@@ -16,10 +16,10 @@ const ModalMenu = ({ modalHandler }: any) => {
         <Link href={'#projects'}>My projects</Link>
         <Link href={'#education'}>Education</Link>
         <Link href={'#contact'}>Contact me</Link>
-        <div className='modal-language'>
+        {/* <div className='modal-language'>
           <Image src={spanish} width={50} height={50} alt='español' />
           <Image src={english} width={45} height={45} alt='english' />
-        </div>
+        </div> */}
       </nav>
     </div>
   )

@@ -31,7 +31,7 @@ const Project = ({ project }: Props) => {
                 <h2>{name}</h2>
                 <Image src={imageProperties.url} width={imageProperties.width} height={imageProperties.height} alt={`Image from ${name}`} />
             </Link>
-            <p>Started on: {initialDate} / {endDate ? `Ended on: ${endDate}` : 'To be ended'}</p>
+            <p>Iniciado el: {initialDate} / {endDate ? `Finalizado el: ${endDate}` : 'Por terminar'}</p>
             <div className='container-skills'>
                 {skills.map((skill: any) => (
                     <div key={skill}>
