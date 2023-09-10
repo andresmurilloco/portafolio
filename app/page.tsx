@@ -11,12 +11,6 @@ import spanish from '../public/assets/img/spanish.png'
 import english from '../public/assets/img/english.png'
 import LayoutMain from './components/layout'
 
-//Functions
-export const metadata: Metadata = {
-  title: 'Welcome - Bienvenido',
-  description: 'Portafolio Andrés Murillo',
-}
-
 export default function Home() {
   useEffect(() => {
     const language = localStorage.getItem('language');
