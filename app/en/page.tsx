@@ -4,7 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 //Components
-import Projects from '../components/Projects'
+import Projects from './components/Projects'
+import LayoutEn from './components/layout'
 
 //Images
 import imageMe from '../../public/assets/img/me.png'
@@ -33,7 +34,7 @@ const HomeEn = () => {
     localStorage.setItem('language', 'en');
   }, [])
   return (
-    <main>
+    <LayoutEn>
       <div id='about' className='about-container'>
         <div className='profile'>
           <div className='profile-picture-background'></div>
@@ -41,7 +42,7 @@ const HomeEn = () => {
         </div>
         <div className='about-text'>
           <h1>About me <Image src={about} width={30} height={30} alt='Education logo'></Image></h1>
-          <p>As a front-end junior developer, I am eager to demonstrate my potential and passion for web development. I am currently pursuing a front-end developer course at Udemy, where I am learning React.js, TypeScript, Astro, JavaScript, Next.JS, Strapi, and Remix. I have also completed a basic programming course at Platzi, where I gained a solid foundation in HTML, CSS, and Git. <br/>My previous work experience as a call center customer service representative and an English teacher has helped me improve my communication, multitasking, and problem-solving skills, as well as my proficiency in English and Spanish. I am a disciplined, responsible, organized, and motivated person, who values honesty and teamwork. I am willing and able to relocate abroad if necessary, and I am always looking for opportunities to enhance my skills and knowledge. I am ready to contribute to your goals and projects with enthusiasm and dedication.
+          <p>As a front-end junior developer, I am eager to demonstrate my potential and passion for web development. I am currently pursuing a front-end developer course at Udemy, where I am learning React.js, TypeScript, Astro, JavaScript, Next.JS, Strapi, and Remix. I have also completed a basic programming course at Platzi, where I gained a solid foundation in HTML, CSS, and Git. <br />My previous work experience as a call center customer service representative and an English teacher has helped me improve my communication, multitasking, and problem-solving skills, as well as my proficiency in English and Spanish. I am a disciplined, responsible, organized, and motivated person, who values honesty and teamwork. I am willing and able to relocate abroad if necessary, and I am always looking for opportunities to enhance my skills and knowledge. I am ready to contribute to your goals and projects with enthusiasm and dedication.
           </p>
         </div>
       </div>
@@ -79,21 +80,21 @@ const HomeEn = () => {
       <div id='contact' className='contact-container'>
         <div className='social-btns-container'>
           <Link className='social-link li-btn' href={'https://www.linkedin.com/in/devandres25/'}>
-            <Image width={30} height={30} src={lilogo} alt={'linkedin button'}/>
+            <Image width={30} height={30} src={lilogo} alt={'linkedin button'} />
             <h2>LinkedIn</h2>
           </Link>
           <Link className='social-link wa-btn' href={'https://wa.me/573176755861'}>
-          <Image width={30} height={30} src={wa} alt={'whatsapp button'}/>
+            <Image width={30} height={30} src={wa} alt={'whatsapp button'} />
             <h2>Whatsapp</h2>
           </Link>
           <Link className='social-link gmail-btn' href={'mailto:dev.andresmurillo@gmail.com'}>
-          <Image width={30} height={25} src={gmail} alt={'gmail button'}/>
+            <Image width={30} height={25} src={gmail} alt={'gmail button'} />
             <h2>E-mail</h2>
           </Link>
         </div>
         <h1>Contact me! <Image src={rocket} width={25} height={25} alt='rocket'></Image></h1>
       </div>
-    </main>
+    </LayoutEn>
   )
 }
 

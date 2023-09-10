@@ -5,7 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 //Components
-import Projects from '../components/Projects'
+import Projects from './components/Projects'
+import LayoutEs from './components/layout'
 
 //Images
 import imageMe from '../../public/assets/img/me.png'
@@ -33,19 +34,20 @@ const HomeEs = () => {
   useEffect(() => {
     localStorage.setItem('language', 'es');
   }, [])
+
   return (
-    <main>
+    <LayoutEs>
       <div id='about' className='about-container'>
         <div className='profile'>
           <div className='profile-picture-background'></div>
           <Image src={imageMe} alt='Profile picture Andrés' className='profile-image' />
         </div>
         <div className='about-text'>
-          <h1>Sobre mi <Image src={about} width={30} height={30} alt='Education logo'></Image></h1>
+          <h1>Sobre mí <Image src={about} width={30} height={30} alt='Education logo'></Image></h1>
           <p>Como programador junior front-end, estoy ansioso por demostrar mi potencial y pasión por el desarrollo web. Actualmente estoy haciendo un curso de NodeJS tras haber acabado un curso enfocado en ReactJS y del que conseguí todo lo necesario para ser un front-end.
           </p>
           <p>
-          Mi anterior experiencia laboral como un agente de servicio al cliente y como profesor de inglés me han ayudado a mejorar mi comunicación, multitarea y habilidades de solución de problemas, así como mi manejo del inglés y español. Soy disciplinado, responsable, organizado y una persona motivada, alguien que valora la honestidad y el trabajo en equipo. Estoy dispuesto a reubicarme si es necesario y siempre estoy buscando oportunidades para mejorar mis habilidades y conocimientos. Estoy listo para contribuir a sus objetivos y proyectos con entusiasmo y dedicación.
+            Mi anterior experiencia laboral como un agente de servicio al cliente y como profesor de inglés me han ayudado a mejorar mi comunicación, multitarea y habilidades de solución de problemas, así como mi manejo del inglés y español. Soy disciplinado, responsable, organizado y una persona motivada, alguien que valora la honestidad y el trabajo en equipo. Estoy dispuesto a reubicarme si es necesario y siempre estoy buscando oportunidades para mejorar mis habilidades y conocimientos. Estoy listo para contribuir a sus objetivos y proyectos con entusiasmo y dedicación.
           </p>
         </div>
       </div>
@@ -57,12 +59,12 @@ const HomeEs = () => {
       </div>
       <div id='education' className='container-education'>
         <div>
-          <h1>Educacion <Image src={edu} width={30} height={30} alt='Education logo'></Image></h1>
+          <h1>Educación <Image src={edu} width={30} height={30} alt='Education logo'></Image></h1>
         </div>
         <div className='education-bar'>
           <div>
             <h2><Image src={icesi} width={20} height={20} alt='Education logo'></Image> Universidad Icesi (2014-2017) </h2>
-            <h4>Ingenieria de sistemas, 4to semestre</h4>
+            <h4>Ingeniería de sistemas, 4to semestre</h4>
           </div>
           <div>
             <h2><Image src={udemy} width={35} height={20} alt='Education logo'></Image>Udemy </h2>
@@ -83,21 +85,21 @@ const HomeEs = () => {
       <div id='contact' className='contact-container'>
         <div className='social-btns-container'>
           <Link className='social-link li-btn' href={'https://www.linkedin.com/in/devandres25/'}>
-            <Image width={30} height={30} src={lilogo} alt={'linkedin button'}/>
+            <Image width={30} height={30} src={lilogo} alt={'linkedin button'} />
             <h2>LinkedIn</h2>
           </Link>
           <Link className='social-link wa-btn' href={'https://wa.me/573176755861'}>
-          <Image width={30} height={30} src={wa} alt={'whatsapp button'}/>
+            <Image width={30} height={30} src={wa} alt={'whatsapp button'} />
             <h2>Whatsapp</h2>
           </Link>
           <Link className='social-link gmail-btn' href={'mailto:dev.andresmurillo@gmail.com'}>
-          <Image width={30} height={25} src={gmail} alt={'gmail button'}/>
+            <Image width={30} height={25} src={gmail} alt={'gmail button'} />
             <h2>E-mail</h2>
           </Link>
         </div>
         <h1>Contactame! <Image src={rocket} width={25} height={25} alt='rocket'></Image></h1>
       </div>
-    </main>
+    </LayoutEs>
   )
 }
 

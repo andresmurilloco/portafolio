@@ -23,7 +23,9 @@ export interface Props {
 
 const Project = ({ project }: Props) => {
     const { git, description, image, endDate, initialDate, skills, url, name }: any = project;       
-    const imageProperties = image;
+
+    const imageProperties = image.data[0].attributes.formats.thumbnail;
+    
 
     return (
         <div className='container-solo-project'>
@@ -33,7 +35,7 @@ const Project = ({ project }: Props) => {
             </Link>
             <p>Started on: {initialDate} / {endDate ? `Ended on: ${endDate}` : 'To be ended'}</p>
             <div className='container-skills'>
-                {skills.map((skill: any) => (
+                {skills.skills.map((skill: any) => (
                     <div key={skill}>
                         <Image src={skill === 'javascript' ? java : skill === 'typescript' ? ts : skill === 'next' ? next : skill === 'react' ? react : skill === 'css' ? css : skill === 'astro' ? astro : skill === 'tailwind' ? tail : skill === 'vite' ? vite : skill === 'remix' ? remix : skill === 'postgresql' ? post : skill === 'strapi' ? strapi : other} alt={'Logo skills'} width={30} height={30} />
                     </div>
@@ -50,7 +52,8 @@ const Project = ({ project }: Props) => {
                 <p>GitHub</p>
                     </Link>
             </div>
-        </div>        
+        </div>
+
     )
 }
 

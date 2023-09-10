@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
 import './css/modal.css'
-import spanish from '../../public/assets/img/spanish.png'
-import english from '../../public/assets/img/english.png'
+import spanish from '../../../public/assets/img/spanish.png'
+import english from '../../../public/assets/img/english.png'
 import Image from 'next/image'
 
-const ModalMenu = ({modalHandler}:any) => {
+const ModalMenu = ({ modalHandler }: any) => {
   return (
-    <div className='navegation-compact' onClick={()=>modalHandler()}>
+    <div className='navegation-compact' onClick={() => modalHandler()}>
       <div className='modal-title'>
         <h1>Menu</h1>
       </div>
