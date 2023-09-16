@@ -66,6 +66,7 @@ const HomeEs = () => {
             <h2><Image src={udemy} width={35} height={20} alt='Education logo'></Image>Udemy </h2>
             <h4>- React - La Guía Completa: Hooks Context Redux MERN +15 Apps</h4>
             <h4>- Next.js: El framework de React para producción</h4>
+            <h4>- Node.js - Bootcamp Desarrollo Web inc. MVC y REST APIs</h4>
           </div>
           <div>
             <h2><Image src={devtalles} width={20} height={20} alt='Education logo'></Image> DevTalles</h2>

@@ -66,6 +66,7 @@ const HomeEn = () => {
             <h2><Image src={devtalles} width={20} height={20} alt='Education logo'></Image> DevTalles</h2>
             <h4>- Curso de manejo de estado en React</h4>
             <h4>- React Query - Un poderoso gestor de estado asíncrono.</h4>
+            <h4>- Node.js - Bootcamp Desarrollo Web inc. MVC y REST APIs</h4>
           </div>
           <div>
             <h2><Image src={platzi} width={20} height={20} alt='Education logo'></Image> Platzi</h2>
