@@ -22,7 +22,6 @@ import udemy from '../../public/assets/img/udemy.png'
 import platzi from '../../public/assets/img/platzi.webp'
 import { useEffect } from 'react'
 
-
 //Functions
 export const metadata: Metadata = {
   title: 'Portafolio',
