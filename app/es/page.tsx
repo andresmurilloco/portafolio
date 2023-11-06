@@ -17,6 +17,7 @@ import edu from '../../public/assets/img/edu.png'
 import about from '../../public/assets/img/about.png'
 import project from '../../public/assets/img/project.png'
 import icesi from '../../public/assets/img/icesi.png'
+import uniminuto from '../../public/assets/img/uniminuto.png'
 import devtalles from '../../public/assets/img/devtalles.jpg'
 import udemy from '../../public/assets/img/udemy.png'
 import platzi from '../../public/assets/img/platzi.webp'
@@ -60,6 +61,10 @@ const HomeEs = () => {
           <div>
             <h2><Image src={icesi} width={20} height={20} alt='Education logo'></Image> Universidad Icesi (2014-2017) </h2>
             <h4>Ingeniería de sistemas, 4to semestre</h4>
+          </div>
+          <div>
+            <h2><Image src={uniminuto} width={20} height={20} alt='Education logo'></Image> Universidad Uniminuto (2023-2026) </h2>
+            <h4>Ingeniería de Software, 1er semestre</h4>
           </div>
           <div>
             <h2><Image src={udemy} width={35} height={20} alt='Education logo'></Image>Udemy </h2>

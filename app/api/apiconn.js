@@ -15,6 +15,8 @@ import rnm from "../../public/assets/img/snaps/rnm/rnm (2).png";
 import guitar from "../../public/assets/img/snaps/guitarla/guitar (4).png";
 import mamoney from "../../public/assets/img/snaps/mamoney/mamoney (2).png";
 import porta from "../../public/assets/img/snaps/portasnap.png";
+import honda from "../../public/assets/img/snaps/honda/honda.png";
+
 export const data = [
   {
     english: [
@@ -122,6 +124,22 @@ export const data = [
         url: "https://andresdev.vercel.app/",
         git: "https://github.com/andresmurilloco/portafolio",
       },
+      {
+        id: 7,
+        name: "Honda Supermotos Jamundí",
+        initialDate: "2023-08-15",
+        endDate: "",
+        image: {
+          url: honda,
+          width: 245,
+          height: 138,
+        },
+        description:
+          "This project was the result of a collaborative effort, working closely with the client to understand their goals and expectations. I was dedicated to translating their vision into a reality by implementing industry best practices, delivering on time, and exceeding their expectations.",
+        skills: ["javascript", "typescript", "css", "react", "next", "other"],
+        url: "https://hondajamundi.vercel.app/",
+        git: "https://github.com/andresmurilloco/honda",
+      },
     ],
     spanish: [
       {
@@ -227,6 +245,22 @@ export const data = [
         ],
         url: "https://andresdev.vercel.app/",
         git: "https://github.com/andresmurilloco/portafolio",
+      },
+      {
+        id: 7,
+        name: "Honda Supermotos Jamundí",
+        initialDate: "2023-08-15",
+        endDate: "",
+        image: {
+          url: honda,
+          width: 245,
+          height: 138,
+        },
+        description:
+          "Nuestra misión fue optimizar la experiencia del usuario, lo que incluyó la creación de una navegación intuitiva, una presentación visual atractiva de los productos y la implementación de funciones interactivas que mejoraron la interacción con el sitio web.",
+        skills: ["javascript", "typescript", "css", "react", "next", "other"],
+        url: "https://hondajamundi.vercel.app/",
+        git: "https://github.com/andresmurilloco/honda",
       },
     ],
   },
