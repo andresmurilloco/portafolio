@@ -128,14 +128,14 @@ export const data = [
         id: 7,
         name: "Honda Supermotos Jamundí",
         initialDate: "2023-08-15",
-        endDate: "",
+        endDate: "2023-11-28",
         image: {
           url: honda,
           width: 245,
           height: 138,
         },
         description:
-          "This project was the result of a collaborative effort, working closely with the client to understand their goals and expectations. I was dedicated to translating their vision into a reality by implementing industry best practices, delivering on time, and exceeding their expectations.",
+          "This project was the result of a collaborative effort, working closely with the client to understand their goals and expectations. I was dedicated to translating their vision into a reality by implementing industry best practices, delivering on time, and exceeding their expectations. The project was closed by client unwillingness to help.",
         skills: ["javascript", "typescript", "css", "react", "next", "other"],
         url: "https://hondajamundi.vercel.app/",
         git: "https://github.com/andresmurilloco/honda",
@@ -250,14 +250,14 @@ export const data = [
         id: 7,
         name: "Honda Supermotos Jamundí",
         initialDate: "2023-08-15",
-        endDate: "",
+        endDate: "2023-11-28",
         image: {
           url: honda,
           width: 245,
           height: 138,
         },
         description:
-          "Nuestra misión fue optimizar la experiencia del usuario, lo que incluyó la creación de una navegación intuitiva, una presentación visual atractiva de los productos y la implementación de funciones interactivas que mejoraron la interacción con el sitio web.",
+          "Nuestra misión fue optimizar la experiencia del usuario, lo que incluyó la creación de una navegación intuitiva, una presentación visual atractiva de los productos y la implementación de funciones interactivas que mejoraron la interacción con el sitio web. El proyecto se archiva debido a la falta de colaboración del cliente.",
         skills: ["javascript", "typescript", "css", "react", "next", "other"],
         url: "https://hondajamundi.vercel.app/",
         git: "https://github.com/andresmurilloco/honda",
