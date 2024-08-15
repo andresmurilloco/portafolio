@@ -1,0 +1,36 @@
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div[class*="skill-graph-"] {
+  background-color: red;
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.skill-graph-0 {
+}
+.skill-graph-10 {
+}
+.skill-graph-20 {
+}
+.skill-graph-30 {
+}
+.skill-graph-40 {
+}
+.skill-graph-50 {
+}
+.skill-graph-60 {
+}
+.skill-graph-70 {
+}
+.skill-graph-80 {
+}
+.skill-graph-90 {
+}
+.skill-graph-100 {
+}

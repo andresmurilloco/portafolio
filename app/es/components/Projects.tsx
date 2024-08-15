@@ -3,7 +3,7 @@ import Project from './Project'
 import { data as dataArray } from '../../api/apiconn'
 
 const Projects = () => {
-  const data = dataArray[0].spanish;
+  const data = dataArray.spanish;
 
   return (
     <div className='project-container'>

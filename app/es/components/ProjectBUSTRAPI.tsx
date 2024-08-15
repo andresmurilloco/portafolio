@@ -22,10 +22,10 @@ export interface Props {
 }
 
 const Project = ({ project }: Props) => {
-    const { git, description, image, endDate, initialDate, skills, url, name }: any = project;       
+    const { git, description, image, endDate, initialDate, skills, url, name }: any = project;
 
     const imageProperties = image.data[0].attributes.formats.thumbnail;
-    
+
 
     return (
         <div className='container-solo-project'>
@@ -34,7 +34,7 @@ const Project = ({ project }: Props) => {
                 <Image src={imageProperties.url} width={imageProperties.width} height={imageProperties.height} alt={`Image from ${name}`} />
             </Link>
             <p>Started on: {initialDate} / {endDate ? `Ended on: ${endDate}` : 'To be ended'}</p>
-            <div className='container-skills'>
+            <div className='container-tools'>
                 {skills.skills.map((skill: any) => (
                     <div key={skill}>
                         <Image src={skill === 'javascript' ? java : skill === 'typescript' ? ts : skill === 'next' ? next : skill === 'react' ? react : skill === 'css' ? css : skill === 'astro' ? astro : skill === 'tailwind' ? tail : skill === 'vite' ? vite : skill === 'remix' ? remix : skill === 'postgresql' ? post : skill === 'strapi' ? strapi : other} alt={'Logo skills'} width={30} height={30} />
@@ -44,13 +44,13 @@ const Project = ({ project }: Props) => {
             <p>{description}</p>
             <div className='project-links'>
                 <Link href={url}>
-                    <Image src={web} width={35} height={35} alt='web logo'/>
+                    <Image src={web} width={35} height={35} alt='web logo' />
                     <p>Website</p>
                 </Link>
                 <Link href={git}>
-                <Image src={gitLogo} width={35} height={35} alt='git logo'/>
-                <p>GitHub</p>
-                    </Link>
+                    <Image src={gitLogo} width={35} height={35} alt='git logo' />
+                    <p>GitHub</p>
+                </Link>
             </div>
         </div>
 

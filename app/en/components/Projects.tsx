@@ -5,7 +5,7 @@ import Project from './Project'
 import { data as dataArray } from '../../api/apiconn'
 
 const Projects = () => {
-  const data = dataArray[0].english;
+  const data = dataArray.english;
 
   return (
     <div className='project-container'>

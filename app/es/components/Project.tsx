@@ -32,7 +32,7 @@ const Project = ({ project }: Props) => {
                 <Image src={imageProperties.url} width={imageProperties.width} height={imageProperties.height} alt={`Image from ${name}`} />
             </Link>
             <p>Iniciado el: {initialDate} / {endDate ? `Finalizado el: ${endDate}` : 'Por terminar'}</p>
-            <div className='container-skills'>
+            <div className='container-tools'>
                 {skills.map((skill: any) => (
                     <div key={skill}>
                         <Image src={skill === 'javascript' ? java : skill === 'typescript' ? ts : skill === 'next' ? next : skill === 'react' ? react : skill === 'css' ? css : skill === 'astro' ? astro : skill === 'tailwind' ? tail : skill === 'vite' ? vite : skill === 'remix' ? remix : skill === 'postgresql' ? post : skill === 'strapi' ? strapi : other} alt={'Logo skills'} width={30} height={30} />

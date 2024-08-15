@@ -1,12 +1,3 @@
-//Libraries and utilities
-import { Metadata } from 'next'
-import Image from 'next/image'
-import Link from 'next/link'
-
-//Components
-import Projects from './components/Projects'
-import LayoutEs from './components/layout'
-
 //Images
 import imageMe from '../../public/assets/img/me.png'
 import lilogo from '../../public/assets/img/li.webp'
@@ -21,7 +12,19 @@ import uniminuto from '../../public/assets/img/uniminuto.png'
 import devtalles from '../../public/assets/img/devtalles.jpg'
 import udemy from '../../public/assets/img/udemy.png'
 import platzi from '../../public/assets/img/platzi.webp'
-import { useEffect } from 'react'
+
+//Libraries and utilities
+import { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+
+//API
+import { skillData } from '../api/apiconn'
+
+//Components
+import Projects from './components/Projects'
+import LayoutEs from './components/layout'
+import Skill from './components/Skill'
 
 //Functions
 export const metadata: Metadata = {
@@ -45,6 +48,15 @@ const HomeEs = () => {
           <p>
             Mi anterior experiencia laboral como un agente de servicio al cliente y como profesor de inglés me han ayudado a mejorar mi comunicación, multitarea y habilidades de solución de problemas, así como mi manejo del inglés y español. Soy disciplinado, responsable, organizado y una persona motivada, alguien que valora la honestidad y el trabajo en equipo. Estoy dispuesto a reubicarme si es necesario y siempre estoy buscando oportunidades para mejorar mis habilidades y conocimientos. Estoy listo para contribuir a sus objetivos y proyectos con entusiasmo y dedicación.
           </p>
+        </div>
+      </div>
+      <div className='skills-container'>
+        <h1 className='skills-title'>Habilidades</h1>
+
+        <div className='skills-graph-container'>
+          {skillData.map(skill => (
+            <Skill key={skill.id} skillData={skill} />
+          ))}
         </div>
       </div>
       <div id='projects' className='projects'>
