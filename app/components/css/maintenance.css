@@ -10,3 +10,7 @@
     height: 70vh;
     flex-direction: column;
 }
+
+.announcement{
+    color: var(--primary);
+}
